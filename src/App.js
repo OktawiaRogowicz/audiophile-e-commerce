@@ -92,7 +92,7 @@ const ColoredSection = styled.div`
   box-sizing: border-box;
   padding: 0 10.313rem 0 10.313rem;
 
-  & > div {
+  &:not(:first-child):not(:last-child) > div {
     margin: 10rem 0 10rem 0;
   }
 `
