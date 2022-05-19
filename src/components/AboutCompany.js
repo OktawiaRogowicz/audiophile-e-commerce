@@ -17,7 +17,7 @@ const HalfContainer = styled.div`
     }
 
     img {
-        height: 36.75rem;
+        width: 100%;
         border-radius: 0.5rem;
     }
 

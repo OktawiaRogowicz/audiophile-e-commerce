@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import logo from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/logo.svg"
-import cart from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/icon-cart.svg"
+import logo from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/logo.svg";
+import cart from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/icon-cart.svg";
+import { css } from "styled-components";
 
 const Container = styled.div`
     height: 6.063rem;
@@ -20,6 +21,9 @@ const Container = styled.div`
         width: 100%;
         height: 1px;
         bottom: 0;
+        ${props => props.version === "footer" && css`
+            opacity: 0;
+        `}
     }
 
     img {
@@ -42,9 +46,9 @@ const Container = styled.div`
     }
 `
 
-function Navbar() {
+function Navbar({version}) {
     return(
-        <Container>
+        <Container version={version}>
             <img src={logo}></img>
             <div>
                 <a><h6>Home</h6></a>
@@ -52,7 +56,7 @@ function Navbar() {
                 <a><h6>Speakers</h6></a>
                 <a><h6>Earphones</h6></a>
             </div>
-            <a><img src={cart}></img></a>
+            {version === "footer" ? "" : <a><img src={cart}></img></a>}
         </Container>
     );
 }
