@@ -8,14 +8,21 @@ const Container = styled.div`
 
 const HalfContainer = styled.div`
     width: 100%;
-    background-color: pink;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
+    h2 span {
+        color: var(--orange);
+    }
+
     img {
         height: 36.75rem;
         border-radius: 0.5rem;
+    }
+
+    div {
+        margin: 0 5rem 0 5rem;
     }
 `
 
