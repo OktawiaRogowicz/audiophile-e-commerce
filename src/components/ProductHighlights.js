@@ -1,17 +1,21 @@
 import styled from "styled-components";
-import ProductHighlight from "./ProductHighlight";
+import ProductHighlightBig from "./ProductHighlightBig";
+import ProductHighlightSmall from "./ProductHighlightSmall";
+import ProductHighlightCut from "./ProductHighlightCut";
 
 const Container = styled.div`
-
+    height: fit-content;
 `
 
 function ProductHighlights() {
     return(
         <Container>
-            <ProductHighlight productName={"ZX9 speaker"}/>
-            Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.
-            <ProductHighlight productName={"ZX7 speaker"}/>
-            <ProductHighlight productName={"YX1 earphones"}/>
+            <ProductHighlightBig
+                productName={"ZX9 speaker"}
+                desc={"Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound."}
+            />
+            <ProductHighlightSmall productName={"ZX7 speaker"}/>
+            <ProductHighlightCut productName={"YX1 earphones"}/>
         </Container>
     );
 }
