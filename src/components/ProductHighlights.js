@@ -5,6 +5,10 @@ import ProductHighlightCut from "./ProductHighlightCut";
 
 const Container = styled.div`
     height: fit-content;
+
+    & > div:not(:first-child):not(:last-child) {
+        margin: 3rem 0 3rem 0;
+    }
 `
 
 function ProductHighlights() {

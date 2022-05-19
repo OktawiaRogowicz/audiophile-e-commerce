@@ -91,6 +91,10 @@ const ColoredSection = styled.div`
   width: 100%;
   box-sizing: border-box;
   padding: 0 10.313rem 0 10.313rem;
+
+  & > div {
+    margin: 10rem 0 10rem 0;
+  }
 `
 
 const HeadphonesBackground = styled(ColoredSection)`
