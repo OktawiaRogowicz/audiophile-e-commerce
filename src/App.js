@@ -13,12 +13,14 @@ const Container = styled.div`
   height: fit-content;
   padding: 0 10.313rem 0 10.313rem;
   box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
 
   h1 {
     line-height: 3.625rem;
     font-size: 3.5rem;
     letter-spacing: 0.125rem;
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   h2 {
@@ -26,6 +28,7 @@ const Container = styled.div`
     font-size: 2.5rem;
     letter-spacing: 0.094rem;
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   h3 {
@@ -33,6 +36,7 @@ const Container = styled.div`
     font-size: 2rem;
     letter-spacing: 0.072rem;
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   h4 {
@@ -40,6 +44,7 @@ const Container = styled.div`
     font-size: 1.75rem;
     letter-spacing: 0.125rem;
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   h5 {
@@ -47,6 +52,7 @@ const Container = styled.div`
     font-size: 1.5rem;
     letter-spacing: 0.106rem;
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   h6 {
@@ -54,11 +60,13 @@ const Container = styled.div`
     font-size: 1.125rem;
     letter-spacing: 0.081rem;
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   p {
     line-height: 3.625rem;
     font-size: 0.938rem;
+    font-weight: 500;
   }
 `
 
