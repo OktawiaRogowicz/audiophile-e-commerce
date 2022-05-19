@@ -8,10 +8,11 @@ import AboutCompany from './components/AboutCompany';
 import ProductHighlights from './components/ProductHighlights';
 import styled from "styled-components";
 
+import image from "./audiophile-ecommerce-website/starter-code/assets/home/desktop/image-hero.jpg";
+
 const Container = styled.div`
   width: 100%;
   height: fit-content;
-  padding: 0 10.313rem 0 10.313rem;
   box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
 
@@ -68,18 +69,58 @@ const Container = styled.div`
     font-size: 0.938rem;
     font-weight: 500;
   }
+  
+  button {
+    line-height: 1.563rem;
+    font-size: 0.813rem;
+    letter-spacing: 0.063rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  #overline {
+    line-height: 1.188rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+`
+
+const ColoredSection = styled.div`
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10.313rem 0 10.313rem;
+`
+
+const HeadphonesBackground = styled(ColoredSection)`
+  width: 100%;
+  height: fit-content;
+  min-width: fit-content;
+  min-height: fit-content;
+  background-image: url("${image}");
+  background-repeat: no-repeat;
+  background-size: cover;
 `
 
 function App() {
   return (
     <Container>
 
-      <Navbar></Navbar>
-      <NewProduct></NewProduct>
+      <HeadphonesBackground>
+        <Navbar></Navbar>
+        <NewProduct></NewProduct>
+      </HeadphonesBackground>
+
+    <ColoredSection>
       <ProductCategories></ProductCategories>
       <ProductHighlights></ProductHighlights>
       <AboutCompany></AboutCompany>
+    </ColoredSection>
+
+    <ColoredSection style={{backgroundColor: "black"}}>
       <Footer></Footer>
+    </ColoredSection>
 
     </Container>
   );
