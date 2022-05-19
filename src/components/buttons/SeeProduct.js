@@ -31,18 +31,27 @@ const Version2 = styled(Container)`
     }
 `
 
+const Version3 = styled(Container)`
+    background-color: var(--black);
+    color: var(--white);
+
+    &:hover, &:active, &:focus {
+        background-color: var(--white);
+        color: var(--black);
+        border: 0.094rem solid var(--black);
+    }
+`
+
 function SeeProductButton({version}) {
 
     const ButtonText = "See Product";
 
-    return(
-        <div>
-            { version === "orange" ?
-                <Version1>{ButtonText}</Version1> : 
-                <Version2>{ButtonText}</Version2>
-            }
-        </div>
-    );
+    if (version === "orange") {
+        return <Version1>{ButtonText}</Version1>;
+    } else if (version === "white") {
+        return <Version2>{ButtonText}</Version2>;
+    } else if (version === "black")
+        return <Version3>{ButtonText}</Version3>;
 }
 
 export default SeeProductButton;

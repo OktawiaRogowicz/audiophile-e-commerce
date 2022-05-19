@@ -70,7 +70,7 @@ function ProductHighlightBig({productName, desc}) {
                 <div>
                     <h1>{productName}</h1>
                     {desc ? <p>{desc}</p> : ""}
-                    <SeeProductButton version="white"></SeeProductButton>
+                    <SeeProductButton version="black"></SeeProductButton>
                 </div>
             </HalfContainer>
         </Container>
