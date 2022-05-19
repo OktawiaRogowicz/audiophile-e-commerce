@@ -64,7 +64,7 @@ const Container = styled.div`
   }
 
   p {
-    line-height: 3.625rem;
+    line-height: 1.563rem;
     font-size: 0.938rem;
     font-weight: 500;
   }
