@@ -8,7 +8,7 @@ const Container = styled.div`
 function ProductCategory({categoryName, categoryImage}) {
     return(
         <Container>
-            <h1>{categoryName}</h1>
+            <h5>{categoryName}</h5>
             <ShopButton></ShopButton>
         </Container>
     );
