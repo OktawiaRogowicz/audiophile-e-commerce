@@ -11,7 +11,7 @@ const Container = styled.button`
     }
 `
 
-const Version1 = styled(Container)`
+export const Version1 = styled(Container)`
     background-color: var(--orange);
     color: white;
 

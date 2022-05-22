@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import ProductHighlightBig from "./ProductHighlightBig";
-import ProductHighlightSmall from "./ProductHighlightSmall";
-import ProductHighlightCut from "./ProductHighlightCut";
+import ProductHighlightBig from "./ProductHighlight/ProductHighlightBig";
+import ProductHighlightSmall from "./ProductHighlight/ProductHighlightSmall";
+import ProductHighlightCut from "./ProductHighlight/ProductHighlightCut";
 
 const Container = styled.div`
     height: fit-content;

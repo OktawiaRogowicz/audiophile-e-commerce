@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import SeeProductButton from "./buttons/SeeProduct";
-import circles from "../audiophile-ecommerce-website/starter-code/assets/home/desktop/pattern-circles.svg";
-import imagezx9 from "../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-speaker-zx9.png";
+import SeeProductButton from "../buttons/SeeProduct";
+import circles from "../../audiophile-ecommerce-website/starter-code/assets/home/desktop/pattern-circles.svg";
+import imagezx9 from "../../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-speaker-zx9.png";
 
 const Container = styled.div`
     height: 35rem;

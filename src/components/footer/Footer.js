@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Navbar from "./Navbar";
+import Navbar from "../navbar/Navbar";
 
-import iconFacebook from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/icon-facebook.svg";
-import iconInstagram from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/icon-instagram.svg";
-import iconTwitter from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/icon-twitter.svg";
+import iconFacebook from "../../audiophile-ecommerce-website/starter-code/assets/shared/desktop/icon-facebook.svg";
+import iconInstagram from "../../audiophile-ecommerce-website/starter-code/assets/shared/desktop/icon-instagram.svg";
+import iconTwitter from "../../audiophile-ecommerce-website/starter-code/assets/shared/desktop/icon-twitter.svg";
 
 const Foot = styled.div`
     display: flex;

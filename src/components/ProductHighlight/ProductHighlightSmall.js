@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import image from "../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-speaker-zx7.jpg";
-import SeeProductButton from "./buttons/SeeProduct";
+import image from "../../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-speaker-zx7.jpg";
+import SeeProductButton from "../buttons/SeeProduct";
 
 const Container = styled.div`
     display: flex;
