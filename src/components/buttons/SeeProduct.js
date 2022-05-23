@@ -44,6 +44,10 @@ const Version3 = styled(Container)`
 
 function SeeProductButton({version, buttonText}) {
 
+    if(!buttonText) {
+        buttonText = "See product";
+    }
+
     if (version === "orange") {
         return <Version1>{buttonText}</Version1>;
     } else if (version === "white") {

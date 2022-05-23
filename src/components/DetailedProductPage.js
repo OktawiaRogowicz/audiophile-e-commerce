@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React, {useState, useEffect} from 'react';
-import Webpage from "./Webpage";
+import PageScheme from "./PageScheme";
 
 import image from "../audiophile-ecommerce-website/starter-code/assets/product-zx9-speaker/desktop/image-gallery-3.jpg";
 import { NavLink, useParams } from "react-router-dom";
@@ -129,15 +129,15 @@ function ProductDesc({id}) {
     );
 }
 
-function ProductDescription() {
+function DetailedProductPage() {
 
     const {id} = useParams();
 
     return(
-        <Webpage
+        <PageScheme
             insideComponent={<ProductDesc id={id}/>}
         />
     );
 }
 
-export default ProductDescription;
+export default DetailedProductPage;

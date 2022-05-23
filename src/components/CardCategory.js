@@ -38,7 +38,7 @@ const Background = styled.div`
     z-index: -1;
 `
 
-function ProductCategory({categoryName, categoryImage}) {
+function CardCategory({categoryName, categoryImage}) {
     return(
         <Container>
                 <Background/>
@@ -49,4 +49,4 @@ function ProductCategory({categoryName, categoryImage}) {
     );
 }
 
-export default ProductCategory;
+export default CardCategory;

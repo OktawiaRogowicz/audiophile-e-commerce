@@ -46,7 +46,7 @@ function NewProduct() {
                 </div>
             </HalfContainer>
             <HalfContainer>
-                {/* <img src={image}></img> */}
+                {/*  */}
             </HalfContainer>
         </Container>
     );

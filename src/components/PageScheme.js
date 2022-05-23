@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import Footer from './footer/Footer';
 import Navbar from './navbar/Navbar';
 import NewProduct from './NewProduct';
-import ProductCategories from './ProductCategories';
+import CardCategories from './CardCategories';
 import AboutCompany from './AboutCompany';
 import ProductHighlights from './ProductHighlights';
 
-import { WebpageContainer, HeadphonesBackground, ColoredSection } from './webpageElements';
+import { WebpageContainer, HeadphonesBackground, ColoredSection } from './pageSchemeElements';
 
-function Webpage({headerComponent, headerImage, insideComponent}) {
+function PageScheme({headerComponent, headerImage, insideComponent}) {
 
   return (
     <WebpageContainer>
@@ -19,7 +19,7 @@ function Webpage({headerComponent, headerImage, insideComponent}) {
 
     <ColoredSection>
         {insideComponent}
-      <ProductCategories></ProductCategories>
+      <CardCategories></CardCategories>
       <AboutCompany></AboutCompany>
     </ColoredSection>
 
@@ -31,4 +31,4 @@ function Webpage({headerComponent, headerImage, insideComponent}) {
   );
 }
 
-export default Webpage;
+export default PageScheme;

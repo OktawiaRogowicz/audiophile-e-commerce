@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router';
-import Webpage from "./Webpage";
 import productsData from "../audiophile-ecommerce-website/starter-code/data.json";
 import Product from "./Product";
 

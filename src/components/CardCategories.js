@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ProductCategory from "./ProductCategory";
+import CardCategory from "./CardCategory";
 
 import headphonesImage from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/image-category-thumbnail-headphones.png";
 import speakersImage from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/image-category-thumbnail-speakers.png";
@@ -13,14 +13,14 @@ const Container = styled.div`
     align-items: center;
 `
 
-function ProductCategories() {
+function CardCategories() {
     return(
         <Container>
-            <ProductCategory categoryName="Headphones" categoryImage={headphonesImage}/>
-            <ProductCategory categoryName="Speakers" categoryImage={speakersImage}/>
-            <ProductCategory categoryName="Earphones" categoryImage={earphonesImage}/>
+            <CardCategory categoryName="Headphones" categoryImage={headphonesImage}/>
+            <CardCategory categoryName="Speakers" categoryImage={speakersImage}/>
+            <CardCategory categoryName="Earphones" categoryImage={earphonesImage}/>
         </Container>
     );
 }
 
-export default ProductCategories;
+export default CardCategories;

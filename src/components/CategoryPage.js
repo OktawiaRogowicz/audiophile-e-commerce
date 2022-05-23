@@ -2,8 +2,8 @@ import styled from "styled-components";
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router';
 import { useLocation } from 'react-router-dom';
-import { ColoredSection, WebpageContainer } from "./webpageElements";
-import Webpage from "./Webpage";
+import { ColoredSection, WebpageContainer } from "./pageSchemeElements";
+import PageScheme from "./PageScheme";
 import Products from "./Products";
 
 const usePathname = () => {
@@ -31,16 +31,16 @@ function Headline({categoryName}) {
     );
 }
 
-function Category() {
+function CategoryPage() {
 
     const categoryName = usePathname();
 
     return(
-        <Webpage
+        <PageScheme
             headerComponent={<Headline categoryName={categoryName}/>}
             insideComponent={<Products categoryName={categoryName}/>}
         />
     );
 }
 
-export default Category;
+export default CategoryPage;

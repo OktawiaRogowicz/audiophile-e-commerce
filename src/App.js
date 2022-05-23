@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import Category from './components/Category';
-import Product from './components/Product';
-import ProductDescription from './components/ProductDescription';
+import HomePage from './components/HomePage';
+import CategoryPage from './components/CategoryPage';
+import DetailedProductPage from './components/DetailedProductPage';
 
 function App() {
 
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/:category" element={<Category/>} />
-        <Route path="/:category/:id" element={<ProductDescription/>} />
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/:category" element={<CategoryPage/>} />
+        <Route path="/:category/:id" element={<DetailedProductPage/>} />
       </Routes>
     </div>
   );

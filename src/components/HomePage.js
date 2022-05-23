@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import Footer from './footer/Footer';
 import Navbar from './navbar/Navbar';
 import NewProduct from './NewProduct';
-import ProductCategories from './ProductCategories';
+import ProductCategories from './CardCategories';
 import AboutCompany from './AboutCompany';
 import ProductHighlights from './ProductHighlights';
 
-import { WebpageContainer, HeadphonesBackground, ColoredSection } from './webpageElements';
-import Webpage from './Webpage';
+import { WebpageContainer, HeadphonesBackground, ColoredSection } from './pageSchemeElements';
+import PageScheme from './PageScheme';
 
 import image from "../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-hero.jpg";
 
-function Home() {
+function HomePage() {
 
   return (
-    <Webpage
+    <PageScheme
         headerComponent={<NewProduct />}
         headerImage={image}
         insideComponent={<ProductHighlights />}
@@ -22,4 +22,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;
