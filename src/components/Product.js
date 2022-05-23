@@ -6,11 +6,14 @@ import productsData from "../audiophile-ecommerce-website/starter-code/data.json
 import SeeProductButton from "./buttons/SeeProduct";
 import { NavLink } from "react-router-dom";
 import { ProductContainer, ProductHalfContainer, ProductInput, ProductTextContainer } from "./productElements";
+import { useContext } from 'react';
+import CartContext from "./CartContext";
 
 function Product({index, ver, id, slug, name, image, category, description, isNew, price}) {
 
     const isInverted = index % 2;
     const link = "/" + category + "/" + id;
+    const value = useContext(CartContext);
 
     function addToCart() {
         
@@ -26,7 +29,7 @@ function Product({index, ver, id, slug, name, image, category, description, isNe
             <ProductHalfContainer style={isInverted ? {order: "1"} : {order: "2"}}>
                 <ProductTextContainer style={isInverted ? {alignSelf: "flex-start"} : {alignSelf: "flex-end"}}>
                     {isNew ? <p><span>New product</span></p> : ""}
-                    <h2>{name}</h2>
+                    <h2>{name}</h2> {value}
                     <p id="desc">{description}</p>
                     {ver === "seeProduct" ? 
                         <NavLink to={link}>

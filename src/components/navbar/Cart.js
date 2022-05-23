@@ -3,6 +3,8 @@ import { css } from "styled-components";
 import CheckoutButton from "../buttons/CheckoutButton";
 import { NavLink } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
+import { useContext } from 'react';
+import CartContext from "../CartContext";
 
 const Container = styled.div`
     position: absolute;
@@ -74,6 +76,7 @@ const TextContainer = styled.div`
 function Cart({version, setShowCart}) {
 
     const [productsInCart, setProductsInCart] = useState(JSON.parse(window.localStorage.getItem('productsInCart')));
+    const value = useContext(CartContext);
 
     useEffect(() => {
       const data = window.localStorage.getItem('productsInCart');
@@ -96,7 +99,7 @@ function Cart({version, setShowCart}) {
                     <a><p>Remove all</p></a>
                 </TextContainer>
                 <ItemsContainer>
-                    <p>There is nothing in the cart yet!</p>
+                    <p>There is nothing in the cart yet!</p> {value}
                 </ItemsContainer>
                 <TextContainer>
                     <p><span>Total</span></p>
