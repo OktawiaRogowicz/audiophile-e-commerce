@@ -34,6 +34,7 @@ function Products({categoryName}) {
                 if(element.category === categoryName)
                 return (
                     <Product
+                        ver = "seeProduct"
                         id = {element.id}
                         slug = {element.slug}
                         name = {element.name}

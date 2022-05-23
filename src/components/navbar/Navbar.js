@@ -16,6 +16,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     position: relative;
+    z-index: 3;
 
     &::after {
         content: "";
@@ -73,7 +74,7 @@ function Navbar({version}) {
                 </div>
                 {version === "footer" ? "" : <a onClick={onClickCartIcon}><img src={cart}></img></a>}
             </Container>
-            { showCart ? <Cart></Cart> : "" }
+            { showCart ? <Cart setShowCart={setShowCart}/> : "" }
         </div>
     );
 }

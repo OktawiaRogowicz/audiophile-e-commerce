@@ -5,6 +5,7 @@ export const WebpageContainer = styled.div`
   height: fit-content;
   box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
+  z-index: 1;
 
   h1 {
     line-height: 3.625rem;

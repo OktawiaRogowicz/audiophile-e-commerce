@@ -42,16 +42,14 @@ const Version3 = styled(Container)`
     }
 `
 
-function SeeProductButton({version}) {
-
-    const ButtonText = "See Product";
+function SeeProductButton({version, buttonText}) {
 
     if (version === "orange") {
-        return <Version1>{ButtonText}</Version1>;
+        return <Version1>{buttonText}</Version1>;
     } else if (version === "white") {
-        return <Version2>{ButtonText}</Version2>;
+        return <Version2>{buttonText}</Version2>;
     } else if (version === "black")
-        return <Version3>{ButtonText}</Version3>;
+        return <Version3>{buttonText}</Version3>;
 }
 
 export default SeeProductButton;
