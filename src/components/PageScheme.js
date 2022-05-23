@@ -8,10 +8,12 @@ import ProductHighlights from './ProductHighlights';
 
 import { WebpageContainer, HeadphonesBackground, ColoredSection } from './pageSchemeElements';
 
-function PageScheme({headerComponent, headerImage, insideComponent}) {
+function PageScheme({headerComponent, headerImage, insideComponent, insideComponentColor, cardCategories, aboutCompany}) {
 
   return (
-    <WebpageContainer>
+    <WebpageContainer
+      style={{backgroundColor: insideComponentColor ? insideComponentColor : ""}}
+    >
       <HeadphonesBackground image={headerImage}>
         <Navbar></Navbar>
         {headerComponent}
@@ -19,8 +21,8 @@ function PageScheme({headerComponent, headerImage, insideComponent}) {
 
     <ColoredSection>
         {insideComponent}
-      <CardCategories></CardCategories>
-      <AboutCompany></AboutCompany>
+        {cardCategories && <CardCategories></CardCategories> }
+        {aboutCompany && <AboutCompany></AboutCompany>}
     </ColoredSection>
 
     <ColoredSection style={{backgroundColor: "black"}}>

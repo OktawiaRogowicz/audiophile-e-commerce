@@ -18,6 +18,8 @@ function HomePage() {
         headerComponent={<NewProduct />}
         headerImage={image}
         insideComponent={<ProductHighlights />}
+        cardCategories={true}
+        aboutCompany={true}
     />
   );
 }

@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import CategoryPage from './components/CategoryPage';
 import DetailedProductPage from './components/DetailedProductPage';
+import CheckoutPage from './components/CheckoutPage';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<HomePage/>} />
         <Route path="/:category" element={<CategoryPage/>} />
         <Route path="/:category/:id" element={<DetailedProductPage/>} />
+        <Route path="/checkout" element={<CheckoutPage/>} />
       </Routes>
     </div>
   );

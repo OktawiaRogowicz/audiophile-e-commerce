@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { css } from "styled-components";
 import CheckoutButton from "../buttons/CheckoutButton";
+import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
 
 const Container = styled.div`
     position: absolute;
@@ -71,6 +73,17 @@ const TextContainer = styled.div`
 
 function Cart({version, setShowCart}) {
 
+    const [productsInCart, setProductsInCart] = useState(JSON.parse(window.localStorage.getItem('productsInCart')));
+
+    useEffect(() => {
+      const data = window.localStorage.getItem('productsInCart');
+      if (data !== null) setProductsInCart(JSON.parse(data));
+    }, []);
+
+    useEffect(() => {
+        window.localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
+    }, [productsInCart]);
+
     function onClick() {
         setShowCart(false);
     }
@@ -89,7 +102,9 @@ function Cart({version, setShowCart}) {
                     <p><span>Total</span></p>
                     <h6>sum</h6>
                 </TextContainer>
-                <CheckoutButton/>
+                <NavLink to="/checkout">
+                    <CheckoutButton/>
+                </NavLink>
             </Container>
             <ScreenBlackOut onClick={onClick}/>
         </div>

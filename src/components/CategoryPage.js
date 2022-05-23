@@ -39,6 +39,8 @@ function CategoryPage() {
         <PageScheme
             headerComponent={<Headline categoryName={categoryName}/>}
             insideComponent={<Products categoryName={categoryName}/>}
+            cardCategories={true}
+            aboutCompany={true}
         />
     );
 }

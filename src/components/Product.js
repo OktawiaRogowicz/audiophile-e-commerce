@@ -12,6 +12,10 @@ function Product({index, ver, id, slug, name, image, category, description, isNe
     const isInverted = index % 2;
     const link = "/" + category + "/" + id;
 
+    function addToCart() {
+        
+    }
+
     return(
         <ProductContainer>
             <ProductHalfContainer style={isInverted ? {order: "2"} : {order: "1"}}>
@@ -32,7 +36,10 @@ function Product({index, ver, id, slug, name, image, category, description, isNe
                         <div>
                             <h6>$ {price.toLocaleString('en', {useGrouping:true})}</h6>
                             <ProductInput type="number" value="1"/>
-                            <SeeProductButton version="orange" buttonText="Add to cart"/>
+                            <SeeProductButton
+                                version="orange"
+                                buttonText="Add to cart"
+                                onClick={addToCart}/>
                         </div>
                     }
                 </ProductTextContainer>

@@ -136,6 +136,8 @@ function DetailedProductPage() {
     return(
         <PageScheme
             insideComponent={<ProductDesc id={id}/>}
+            cardCategories={true}
+            aboutCompany={true}
         />
     );
 }
