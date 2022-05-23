@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/audiophile-e-commerce/static/css/main.8dee5f16.css",
-    "main.js": "/audiophile-e-commerce/static/js/main.6c9808ad.js",
+    "main.js": "/audiophile-e-commerce/static/js/main.a4bf5445.js",
     "static/js/787.8093f5c1.chunk.js": "/audiophile-e-commerce/static/js/787.8093f5c1.chunk.js",
     "static/media/image-speaker-zx9.png": "/audiophile-e-commerce/static/media/image-speaker-zx9.153cd899b91a08b22b1a.png",
     "static/media/image-category-thumbnail-headphones.png": "/audiophile-e-commerce/static/media/image-category-thumbnail-headphones.fbd401d9c735a217286f.png",
@@ -20,11 +20,11 @@
     "static/media/pattern-circles.svg": "/audiophile-e-commerce/static/media/pattern-circles.f4df3610b83b818abbbecd009a5b11d3.svg",
     "static/media/icon-arrow-right.svg": "/audiophile-e-commerce/static/media/icon-arrow-right.357b9db81a798d76397efa2f4ad3409f.svg",
     "main.8dee5f16.css.map": "/audiophile-e-commerce/static/css/main.8dee5f16.css.map",
-    "main.6c9808ad.js.map": "/audiophile-e-commerce/static/js/main.6c9808ad.js.map",
+    "main.a4bf5445.js.map": "/audiophile-e-commerce/static/js/main.a4bf5445.js.map",
     "787.8093f5c1.chunk.js.map": "/audiophile-e-commerce/static/js/787.8093f5c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8dee5f16.css",
-    "static/js/main.6c9808ad.js"
+    "static/js/main.a4bf5445.js"
   ]
 }
