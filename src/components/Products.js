@@ -30,10 +30,10 @@ function Products({categoryName}) {
 
     return(
         <Container>
-            {productsData.map((element) => {
-                if(element.category === categoryName)
+            {productsData.filter(el => el.category === categoryName).map((element, index) => {
                 return (
                     <Product
+                        index = {index}
                         ver = "seeProduct"
                         id = {element.id}
                         slug = {element.slug}

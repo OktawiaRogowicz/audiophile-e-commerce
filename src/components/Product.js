@@ -7,9 +7,9 @@ import SeeProductButton from "./buttons/SeeProduct";
 import { NavLink } from "react-router-dom";
 import { ProductContainer, ProductHalfContainer, ProductInput, ProductTextContainer } from "./ProductElements";
 
-function Product({ver, id, slug, name, image, category, description, isNew, price}) {
+function Product({index, ver, id, slug, name, image, category, description, isNew, price}) {
 
-    const isInverted = id % 2;
+    const isInverted = index % 2;
     const link = "/" + category + "/" + id;
 
     return(
