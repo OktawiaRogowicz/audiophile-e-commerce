@@ -16,7 +16,7 @@ function HomePage() {
   return (
     <PageScheme
         headerComponent={<NewProduct />}
-        headerImage={image}
+        headerImage={true}
         insideComponent={<ProductHighlights />}
         cardCategories={true}
         aboutCompany={true}

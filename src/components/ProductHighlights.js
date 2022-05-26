@@ -4,6 +4,7 @@ import ProductHighlightSmall from "./ProductHighlight/ProductHighlightSmall";
 import ProductHighlightCut from "./ProductHighlight/ProductHighlightCut";
 
 const Container = styled.div`
+    width: 100%;
     height: fit-content;
 
     & > div:not(:first-child):not(:last-child) {

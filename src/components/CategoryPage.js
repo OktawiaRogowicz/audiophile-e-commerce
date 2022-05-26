@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 import { ColoredSection, WebpageContainer } from "./pageSchemeElements";
 import PageScheme from "./PageScheme";
 import Products from "./Products";
+import { Outlet } from "react-router-dom";
 
 const usePathname = () => {
     const location = useLocation();
@@ -38,10 +39,11 @@ function CategoryPage() {
     return(
         <PageScheme
             headerComponent={<Headline categoryName={categoryName}/>}
-            insideComponent={<Products categoryName={categoryName}/>}
+            insideComponent={[<Products categoryName={categoryName}/>, <Outlet/>]}
             cardCategories={true}
             aboutCompany={true}
         />
+        
     );
 }
 

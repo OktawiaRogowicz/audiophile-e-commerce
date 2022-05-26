@@ -1,9 +1,15 @@
 import styled from "styled-components";
-import portrait from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/image-best-gear.jpg"
+import portraitDesktop from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/image-best-gear.jpg"
+import portraitTablet from "../audiophile-ecommerce-website/starter-code/assets/shared/tablet/image-best-gear.jpg"
 
 const Container = styled.div`
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+    }
 `
 
 const HalfContainer = styled.div`
@@ -11,6 +17,11 @@ const HalfContainer = styled.div`
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    order: 1;
+    
+    @media (max-width: 768px) {
+        order: 2;
+    }
 
     h2 span {
         color: var(--orange);
@@ -19,10 +30,27 @@ const HalfContainer = styled.div`
     img {
         width: 100%;
         border-radius: 0.5rem;
+        content: url("${portraitDesktop}");
+
+        @media (max-width: 768px) {
+            content: url("${portraitTablet}");
+        }
     }
 
     div {
         margin: 0 5rem 0 5rem;
+
+        @media (max-width: 768px) {
+            margin: 2rem 4rem 0 4rem;
+        }
+    }
+
+    & + & {
+        order: 2;
+
+        @media (max-width: 768px) {
+            order: 1;
+        }
     }
 `
 
@@ -42,7 +70,7 @@ function AboutCompany() {
                 </div>
             </HalfContainer>
             <HalfContainer>
-                <img src={portrait}></img>
+                <img/>
             </HalfContainer>
         </Container>
     );

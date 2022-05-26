@@ -17,6 +17,11 @@ const Container = styled.div`
 
     z-index: 1;
 
+    @media (max-width: 768px) {
+        height: 223px;
+        max-width: 217px;
+    }
+
     img {
         max-width: 75%;
         margin: 0;

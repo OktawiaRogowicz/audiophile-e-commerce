@@ -18,6 +18,10 @@ const Container = styled.div`
     position: relative;
     z-index: 3;
 
+    @media (max-width: 768px) {
+        height: 3rem;
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -29,6 +33,10 @@ const Container = styled.div`
         ${props => props.version === "footer" && css`
             opacity: 0;
         `}
+
+        @media (max-width: 768px) {
+            bottom: -1.5rem;
+        }
     }
 
     img {
@@ -47,6 +55,10 @@ const Container = styled.div`
     div {
         display: flex;
         flex-direction: row;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
 
         h6 {
             margin: 0 1rem 0 1rem;

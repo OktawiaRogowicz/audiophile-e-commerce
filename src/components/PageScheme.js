@@ -14,7 +14,9 @@ function PageScheme({headerComponent, headerImage, insideComponent, insideCompon
     <WebpageContainer
       style={{backgroundColor: insideComponentColor ? insideComponentColor : ""}}
     >
-      <HeadphonesBackground image={headerImage}>
+      <HeadphonesBackground
+        style={headerImage ? {} : {backgroundImage: "none"}}
+      >
         <Navbar></Navbar>
         {headerComponent}
       </HeadphonesBackground>

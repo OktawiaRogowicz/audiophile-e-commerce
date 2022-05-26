@@ -3,6 +3,7 @@ import SeeProductButton from "./buttons/SeeProduct";
 import image from "../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-hero.jpg";
 
 const Container = styled.div`
+    width: 100%;
     height: 39.5rem;
     display: flex;  
     flex-direction: row;
@@ -11,16 +12,28 @@ const Container = styled.div`
     padding: 0 9rem 0 9rem;
 
     background-color: transparent;
+
+    @media (max-width: 768px) {
+        padding: 0;
+        justify-content: center;
+    }
+
 `
 
 const HalfContainer = styled.div`
-    width: 100%;
+    width: 50%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
     color: white;
+
+    @media (max-width: 768px) {
+        width: 40%;
+        text-align: center;
+    }
+
 
     h6 {
         opacity: 0.5;
@@ -29,7 +42,6 @@ const HalfContainer = styled.div`
 
     p {
         color: var(--grey);
-        max-width: 23rem;
         margin: 2rem 0 3rem 0;
     }
 `
@@ -39,14 +51,11 @@ function NewProduct() {
         <Container>
             <HalfContainer>
                 <div>
-                    <h6 id="overline">New product</h6>
+                    <h6><span>New product</span></h6>
                     <h1>XX99 Mark II Headphones</h1>
                     <p>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
                     <SeeProductButton version="orange"></SeeProductButton>
                 </div>
-            </HalfContainer>
-            <HalfContainer>
-                {/*  */}
             </HalfContainer>
         </Container>
     );

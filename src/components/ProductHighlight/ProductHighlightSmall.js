@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import image from "../../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-speaker-zx7.jpg";
 import SeeProductButton from "../buttons/SeeProduct";
+
+import imageDesktop from "../../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-speaker-zx7.jpg";
+import imageTablet from "../../audiophile-ecommerce-website/starter-code/assets/home/tablet/image-speaker-zx7.jpg";
 
 const Container = styled.div`
     display: flex;
@@ -11,9 +13,13 @@ const Container = styled.div`
     box-sizing: border-box;
     padding: 5rem;
 
-    background-image: url("${image}");
+    background-image: url("${imageDesktop}");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: 768px) {
+        background-image: url("${imageTablet}");
+    }
 `
 
 const HalfContainer = styled.div`
@@ -21,7 +27,7 @@ const HalfContainer = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    h2 {
+    h3 {
         margin-top: 0;
     }
 `
@@ -32,7 +38,7 @@ function ProductHighlightSmall({productName}) {
             <HalfContainer>
             </HalfContainer>
             <HalfContainer>
-                <h2>{productName}</h2>
+                <h3>{productName}</h3>
                 <SeeProductButton version="white"></SeeProductButton>
             </HalfContainer>
         </Container>
