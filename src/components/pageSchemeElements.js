@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
+import imageDesktop from "../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-hero.jpg";
+import imageTablet from "../audiophile-ecommerce-website/starter-code/assets/home/tablet/image-header.jpg";
+
 export const WebpageContainer = styled.div`
   width: 100%;
+  max-width: 100%;
   height: fit-content;
   box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
@@ -84,6 +88,10 @@ export const ColoredSection = styled.div`
   box-sizing: border-box;
   padding: 0 10.313rem 0 10.313rem;
 
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
+
   &:not(:first-child):not(:last-child) > div {
     margin: 10rem 0 10rem 0;
   }
@@ -95,7 +103,12 @@ export const HeadphonesBackground = styled(ColoredSection)`
   min-width: fit-content;
   min-height: fit-content;
   background-color: black;
-  background-image: url("${props => props.image}"); 
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-image: url("${imageDesktop}"); 
+
+  @media (max-width: 768px) {
+    background-image: url("${imageTablet}"); 
+  }
 `
