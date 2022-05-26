@@ -38,7 +38,7 @@ const Input = styled.input`
     box-sizing: border-box;
     background-color: transparent;
     border-radius: 5px;
-    border: 1.5px solid grey;
+    border: 1.5px solid lightgrey;
     padding: 1rem;
 
     & + & {
