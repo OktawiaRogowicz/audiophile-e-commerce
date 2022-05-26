@@ -44,12 +44,13 @@ const Container = styled.div`
     }
 
     a {
-        &:hover, &:active, &:focus {
-            cursor: pointer;
-        }
-
         text-decoration: none;
         color: var(--grey);
+
+        &:hover, &:active, &:focus {
+            cursor: pointer;
+            color: var(--orange);
+        }
     }
 
     div {
