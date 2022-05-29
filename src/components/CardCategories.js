@@ -11,6 +11,10 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 425px){
+        flex-direction: column;
+    }
 `
 
 function CardCategories() {

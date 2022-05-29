@@ -8,6 +8,7 @@ import logo from "../../audiophile-ecommerce-website/starter-code/assets/shared/
 import cart from "../../audiophile-ecommerce-website/starter-code/assets/shared/desktop/icon-cart.svg";
 
 const Container = styled.div`
+    max-width: 100%;
     height: 6.063rem;
     background-color: transparent;
     color: lightgrey;

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import portraitDesktop from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/image-best-gear.jpg"
 import portraitTablet from "../audiophile-ecommerce-website/starter-code/assets/shared/tablet/image-best-gear.jpg"
+import portraitMobile from "../audiophile-ecommerce-website/starter-code/assets/shared/mobile/image-best-gear.jpg"
+
 
 const Container = styled.div`
     display: flex;
@@ -35,6 +37,10 @@ const HalfContainer = styled.div`
         @media (max-width: 768px) {
             content: url("${portraitTablet}");
         }
+
+        @media (max-width: 768px) {
+            content: url("${portraitMobile}");
+        }
     }
 
     div {
@@ -42,6 +48,14 @@ const HalfContainer = styled.div`
 
         @media (max-width: 768px) {
             margin: 2rem 4rem 0 4rem;
+        }
+
+        @media (max-width: 425px) {
+            margin: 2rem 1rem 0 1rem;
+
+            p {
+                margin: 0 0.5rem 0 0.5rem;
+            }
         }
     }
 

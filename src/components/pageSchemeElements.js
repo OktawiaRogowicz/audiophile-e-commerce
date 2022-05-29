@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import imageDesktop from "../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-hero.jpg";
 import imageTablet from "../audiophile-ecommerce-website/starter-code/assets/home/tablet/image-header.jpg";
+import imageMobile from "../audiophile-ecommerce-website/starter-code/assets/home/mobile/image-header.jpg";
 
 export const WebpageContainer = styled.div`
   width: 100%;
@@ -17,6 +18,14 @@ export const WebpageContainer = styled.div`
     letter-spacing: 0.125rem;
     text-transform: uppercase;
     font-weight: 700;
+    
+    @media (max-width: 425px) {
+      line-height: 2.75rem;
+      font-size: 2.5rem;
+      letter-spacing: 0.094rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
   }
 
   h2 {
@@ -25,6 +34,14 @@ export const WebpageContainer = styled.div`
     letter-spacing: 0.094rem;
     text-transform: uppercase;
     font-weight: 700;
+
+    @media (max-width: 425px) {
+      line-height: 2.25rem;
+      font-size: 2rem;
+      letter-spacing: 0.072rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
   }
 
   h3 {
@@ -110,5 +127,9 @@ export const HeadphonesBackground = styled(ColoredSection)`
 
   @media (max-width: 768px) {
     background-image: url("${imageTablet}"); 
+  }
+
+  @media (max-width: 425px) {
+    background-image: url("${imageMobile}"); 
   }
 `

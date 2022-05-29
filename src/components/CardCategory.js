@@ -22,6 +22,12 @@ const Container = styled.div`
         max-width: 217px;
     }
 
+    @media (max-width: 425px){
+        max-width: 327px;
+        overflow: hidden;
+        height: fit-content;
+    }
+
     img {
         max-width: 75%;
         margin: 0;

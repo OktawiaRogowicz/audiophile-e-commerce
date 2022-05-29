@@ -4,6 +4,7 @@ import image from "../audiophile-ecommerce-website/starter-code/assets/home/desk
 
 const Container = styled.div`
     width: 100%;
+    max-width: 100%;
     height: 39.5rem;
     display: flex;  
     flex-direction: row;

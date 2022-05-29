@@ -11,6 +11,11 @@ const Container = styled.div`
     flex-direction: row;
 
     box-sizing: border-box;
+
+    @media (max-width: 425px){
+        height: fit-content;
+        flex-direction: column;
+    }
 `
 
 const HalfContainer = styled.div`
@@ -42,6 +47,10 @@ const HalfContainer = styled.div`
 
     &:first-child {
         margin-right: 1rem;
+
+        @media (max-width: 425px){
+            margin-bottom: 2rem;
+        }
     }
 
     &:last-child {

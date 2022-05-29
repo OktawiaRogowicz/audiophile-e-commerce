@@ -23,8 +23,8 @@ function PageScheme({headerComponent, headerImage, insideComponent, insideCompon
 
     <ColoredSection>
         {insideComponent}
-        {cardCategories && <CardCategories></CardCategories> }
-        {aboutCompany && <AboutCompany></AboutCompany>}
+        {cardCategories && <CardCategories/> }
+        {aboutCompany && <AboutCompany/>}
     </ColoredSection>
 
     <ColoredSection style={{backgroundColor: "black"}}>

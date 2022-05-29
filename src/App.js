@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div>
-      <CartContext.Provider value="blep">
+      <CartContext.Provider value="">
         <Routes>
           <Route index element={<HomePage/>} />
           <Route path="home" element={<HomePage/>}/>
