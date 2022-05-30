@@ -6,20 +6,31 @@ import iconInstagram from "../../audiophile-ecommerce-website/starter-code/asset
 import iconTwitter from "../../audiophile-ecommerce-website/starter-code/assets/shared/desktop/icon-twitter.svg";
 
 const Foot = styled.div`
+    position: relative;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     padding: 2rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 6.313rem;
+        height: 5px;
+        background-color: var(--orange);
+    }
 `
 
 const Container = styled.div`
+    position: relative;
     display: flex;
     flex-direction: row;
     color: grey;
 `
 
 const HalfContainer = styled.div`
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,16 +42,14 @@ const HalfContainer = styled.div`
 `
 
 const HalfContainerSecond = styled(HalfContainer)`
-    width: 100%;
+    width: fit-content;
     display: block;
-    margin-right: 0;
-    margin-bottom: 0;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    right: 0;
 
     div {
-        position: absolute;
-        top: 50%;
-        right: 0;
+        position: relative;
         transform: translateY(-50%);
     }
 
@@ -48,6 +57,14 @@ const HalfContainerSecond = styled(HalfContainer)`
         max-height: 1.5rem;
         max-width: 1.5rem;
         margin: 0.5rem;
+
+        &:active, &:focus, &:hover {
+            cursor: pointer;
+        }
+    }
+
+    svg:hover path{
+        fill: var(--orange);
     }
 `
 

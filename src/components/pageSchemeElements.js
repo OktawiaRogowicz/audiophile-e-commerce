@@ -106,7 +106,7 @@ export const ColoredSection = styled.div`
   padding: 0 10.313rem 0 10.313rem;
 
   @media (max-width: 768px) {
-    padding: 2rem;
+    padding: 0 2rem 0 2rem;
   }
 
   &:not(:first-child):not(:last-child) > div {
