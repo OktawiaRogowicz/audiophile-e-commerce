@@ -60,11 +60,8 @@ const HalfContainerSecond = styled(HalfContainer)`
 
         &:active, &:focus, &:hover {
             cursor: pointer;
+            filter: brightness(0) saturate(100%) invert(58%) sepia(97%) saturate(444%) hue-rotate(326deg) brightness(90%) contrast(87%);
         }
-    }
-
-    svg:hover path{
-        fill: var(--orange);
     }
 `
 
