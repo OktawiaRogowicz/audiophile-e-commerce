@@ -17,6 +17,8 @@ const Container = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
 
+    border-radius: 5px;
+
     @media (max-width: 768px) {
         background-image: url("${imageTablet}");
     }
