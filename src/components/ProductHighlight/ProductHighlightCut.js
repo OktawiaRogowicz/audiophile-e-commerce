@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import SeeProductButton from "../buttons/SeeProduct";
+import { NavLink } from "react-router-dom";
 
 import imageDesktop from "../../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-earphones-yx1.jpg";
 import imageTablet from "../../audiophile-ecommerce-website/starter-code/assets/home/tablet/image-earphones-yx1.jpg";
@@ -73,7 +74,9 @@ function ProductHighlightCut({productName}) {
             </HalfContainer>
             <HalfContainer>
                 <h3>{productName}</h3>
-                <SeeProductButton version="white"></SeeProductButton>
+                <NavLink to="/speakers">
+                    <SeeProductButton version="white"></SeeProductButton>
+                </NavLink>
             </HalfContainer>
         </Container>
     );

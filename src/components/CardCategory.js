@@ -55,7 +55,7 @@ function CardCategory({categoryName, categoryImage}) {
                 <Background/>
                 <img src={categoryImage}></img>
                 <h6>{categoryName}</h6>
-                <ShopButton></ShopButton>
+                <ShopButton/>
         </Container>
     );
 }

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import SeeProductButton from "../buttons/SeeProduct";
+import { NavLink } from "react-router-dom";
 
 import circles from "../../audiophile-ecommerce-website/starter-code/assets/home/desktop/pattern-circles.svg";
 import imagezx9Desktop from "../../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-speaker-zx9.png";
@@ -98,7 +99,9 @@ function ProductHighlightBig({productName, desc}) {
                 <div>
                     <h1>{productName}</h1>
                     {desc ? <p>{desc}</p> : ""}
-                    <SeeProductButton version="black"></SeeProductButton>
+                    <NavLink to="/headphones">
+                        <SeeProductButton version="black"></SeeProductButton>
+                    </NavLink>
                 </div>
             </HalfContainer>
         </Container>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import CardCategory from "./CardCategory";
+import { NavLink } from "react-router-dom";
 
 import headphonesImage from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/image-category-thumbnail-headphones.png";
 import speakersImage from "../audiophile-ecommerce-website/starter-code/assets/shared/desktop/image-category-thumbnail-speakers.png";
@@ -11,6 +12,11 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 
     @media (max-width: 425px){
         flex-direction: column;
@@ -20,9 +26,15 @@ const Container = styled.div`
 function CardCategories() {
     return(
         <Container>
-            <CardCategory categoryName="Headphones" categoryImage={headphonesImage}/>
-            <CardCategory categoryName="Speakers" categoryImage={speakersImage}/>
-            <CardCategory categoryName="Earphones" categoryImage={earphonesImage}/>
+            <NavLink to={"/headphones"}>
+                <CardCategory categoryName="Headphones" categoryImage={headphonesImage}/>
+            </NavLink>
+            <NavLink to={"/speakers"}>
+                <CardCategory categoryName="Speakers" categoryImage={speakersImage}/>
+            </NavLink>
+            <NavLink to={"/earphones"}>
+                <CardCategory categoryName="Earphones" categoryImage={earphonesImage}/>
+            </NavLink>
         </Container>
     );
 }

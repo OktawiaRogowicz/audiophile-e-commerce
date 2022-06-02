@@ -3,6 +3,7 @@ import SeeProductButton from "../buttons/SeeProduct";
 
 import imageDesktop from "../../audiophile-ecommerce-website/starter-code/assets/home/desktop/image-speaker-zx7.jpg";
 import imageTablet from "../../audiophile-ecommerce-website/starter-code/assets/home/tablet/image-speaker-zx7.jpg";
+import { NavLink } from "react-router-dom";
 
 const Container = styled.div`
     display: flex;
@@ -41,7 +42,7 @@ function ProductHighlightSmall({productName}) {
             </HalfContainer>
             <HalfContainer>
                 <h3>{productName}</h3>
-                <SeeProductButton version="white"></SeeProductButton>
+                <NavLink to="/earphones"><SeeProductButton version="white"></SeeProductButton></NavLink>
             </HalfContainer>
         </Container>
     );
